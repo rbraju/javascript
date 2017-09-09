@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Adding 2 numbers</title>
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+<body onload="playGame()">
+    <script src="scripts/game.js"></script>
+    <div>
+        <h1>Sum of two numbers</h1>
+        <hr />
+        <div class="main">
+            <div class="question">
+                Sum of <span class="number"></span> and <span class="number"></span> is
+            </div>
+            <div id="score" class="score">
+                Score : <span id="result">0</span>
+            </div>
+            <div class="options">
+                <div class="option animated zoomIn" onclick="checkAnswer(this)">
+                    <div id="option1" class="option-block"></div>
+                </div>
+                <div class="option animated zoomIn" onclick="checkAnswer(this)">
+                    <div id="option2" class="option-block"></div>
+                </div>
+                <div class="option animated zoomIn" onclick="checkAnswer(this)">
+                    <div id="option3" class="option-block"></div>
+                </div>
+                <div class="option animated zoomIn" onclick="checkAnswer(this)">
+                    <div id="option4" class="option-block"></div>
+                </div>
+            </div>
+            <div id="after" class="after hide">
+            </div>
+            <div class="play" onclick="playAgain()">
+                <a class="button">Play Again</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

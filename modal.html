@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Demo</title>
+  <link rel="stylesheet" type="text/css" href="css/modal.css" />
+</head>
+
+<body>
+  <h3>Displaying a simple modal</h3>
+  <button id="myBtn" onclick="openModal()">Click here to open a modal</button>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modalContent">
+      <div class="modalHeader">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="headerText">Amazon's too big for only one HQ</h3>
+      </div>
+      <div class="modalBody">
+        <p>Amazon will spend up to $5 billion on a second HQ in North America, intended to operate as a "full equal" to its Seattle base and house up to 50,000 employees. The company has sent out the call to local and state governments for pitches.Winning
+          the bid would have a major impact on the region’s economy.</p>
+        <p>Amazon has promised to bring the city tens of thousands of "high-paying" jobs and billions of dollars in investments. There’s no denying the e-commerce giant’s effect on Seattle; the city has been called America’s biggest company town, with Amazon
+          taking up more office space than the next 40 biggest employers combined.</p>
+      </div>
+      <div class="modalFooter">
+        <p>#amazonHQ2</p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/modal.js"></script>
+</body>
+
+</html>
